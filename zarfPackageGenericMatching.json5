@@ -71,7 +71,7 @@
       "extractVersionTemplate": "{{#if extractVersion}}{{{extractVersion}}}{{else}}^(?<version>.*)${{/if}}",
       "datasourceTemplate": "docker"
     },
-    // Matches individual helm repo charts in a `zarf.yaml`'s `charts:` section that specify `version` then `url`
+    // Matches individual helm repo charts in a `zarf.yaml`'s `charts:` section that specify `url` then `version`
     {
       "fileMatch": ["(^|/)zarf\\.ya?ml$"],
       "matchStringsStrategy": "recursive",
@@ -81,11 +81,11 @@
         // Match a chart entry. Test: https://regex101.com/r/ibpxYd/1
         "(?m)name:(.|\\n)+?(^\\s{4}[\\w\\-:]+|\\n$|^\\s{2}-|^\\s{6}-)",
         // Match the parts of a chart entry. Test: https://regex101.com/r/nruXFi/1
-        "(?m)name: [\"']?(?<depName>.+?)[\"']?$(.|\\n)*?version: [\"']?(?<currentValue>.+?)[\"']?$(.|\\n)*?url: [\"']?(?<registryUrl>.+?)[\"']?$"
+        "(?m)name: [\"']?(?<depName>.+?)[\"']?$(.|\\n)*?url: [\"']?(?!oci:\\/\\/)(?<registryUrl>.+?)[\"']?$(.|\\n)*?version: [\"']?(?<currentValue>.+?)[\"']?$"
       ],
       "datasourceTemplate": "helm"
     },
-    // Matches individual helm repo charts in a `zarf.yaml`'s `charts:` section that specify `url` then `version`
+    // Matches individual helm repo charts in a `zarf.yaml`'s `charts:` section that specify `version` then `url`
     {
       "fileMatch": ["(^|/)zarf.yaml$"],
       "matchStringsStrategy": "recursive",
@@ -95,7 +95,7 @@
         // Match a chart entry. Test: https://regex101.com/r/ibpxYd/1
         "(?m)name:(.|\\n)+?(^\\s{4}[\\w\\-:]+|\\n$|^\\s{2}-|^\\s{6}-)",
         // Match the parts of a chart entry. Test: https://regex101.com/r/iqP5RJ/1
-        "(?m)name: [\"']?(?<depName>.+?)[\"']?$(.|\\n)*?url: [\"']?(?<registryUrl>.+?)[\"']?$(.|\\n)*?version: [\"']?(?<currentValue>.+?)[\"']?$"
+        "(?m)name: [\"']?(?<depName>.+?)[\"']?$(.|\n)*?version: [\"']?(?<currentValue>.+?)[\"']?$(.|\n)*?url: [\"']?(?!oci:\/\/)(?<registryUrl>.+?)[\"']?$"
       ],
       "datasourceTemplate": "helm"
     },
