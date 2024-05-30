@@ -71,21 +71,21 @@
       "extractVersionTemplate": "{{#if extractVersion}}{{{extractVersion}}}{{else}}^(?<version>.*)${{/if}}",
       "datasourceTemplate": "docker"
     },
-    // Matches individual helm repo charts in a `zarf.yaml`'s `charts:` section that specify `url` then `version`
+    // Matches individual helm repo charts in a `zarf.yaml`'s `charts:` section that specify `version` then `url`
     {
       "fileMatch": ["(^|/)zarf\\.ya?ml$"],
       "matchStringsStrategy": "recursive",
       "matchStrings": [
         // Match the chart section. Test: https://regex101.com/r/1DL0tI/3
         "(?m)charts:(.|\\n)*?(^\\s{4}[\\w:]+|\\n$|^\\s{2}-)",
-        // Match a chart entry. Test: https://regex101.com/r/ibpxYd/1
+        // Match a chart entry. Test: https://regex101.com/r/loPBI4/1
         "(?m)name:(.|\\n)+?(^\\s{4}[\\w\\-:]+|\\n$|^\\s{2}-|^\\s{6}-)",
         // Match the parts of a chart entry. Test: https://regex101.com/r/2BhQd2/1
-        "(?m)name: [\"']?(?<depName>.+?)[\"']?$(.|\\n)*?url: [\"']?(?!oci:\\/\\/)(?<registryUrl>.+?)[\"']?$(.|\\n)*?version: [\"']?(?<currentValue>.+?)[\"']?$"
+        "(?m)name: [\"']?(?<depName>.+?)[\"']?$(.|\\n)*?version: [\"']?(?<currentValue>.+?)[\"']?$(.|\\n)*?url: [\"']?(?<registryUrl>(https|http|file|git):\\/\\/.+?)[\"']?$"
       ],
       "datasourceTemplate": "helm"
     },
-    // Matches individual helm repo charts in a `zarf.yaml`'s `charts:` section that specify `version` then `url`
+    // Matches individual helm repo charts in a `zarf.yaml`'s `charts:` section that specify `url` then `version`
     {
       "fileMatch": ["(^|/)zarf.yaml$"],
       "matchStringsStrategy": "recursive",
@@ -94,8 +94,8 @@
         "(?m)charts:(.|\\n)*?(^\\s{4}[\\w:]+|\\n$|^\\s{2}-)",
         // Match a chart entry. Test: https://regex101.com/r/ibpxYd/1
         "(?m)name:(.|\\n)+?(^\\s{4}[\\w\\-:]+|\\n$|^\\s{2}-|^\\s{6}-)",
-        // Match the parts of a chart entry. Test: https://regex101.com/r/6WiZq5/1
-        "(?m)name: [\"']?(?<depName>.+?)[\"']?$(.|\n)*?version: [\"']?(?<currentValue>.+?)[\"']?$(.|\n)*?url: [\"']?(?!oci:\/\/)(?<registryUrl>.+?)[\"']?$"
+        // Match the parts of a chart entry. Test: https://regex101.com/r/GgGbkM/1
+        "(?m)name: [\"']?(?<depName>.+?)[\"']?$(.|\\n)*?url: [\"']?(?<registryUrl>(https|http|file|git):\\/\\/.+?)[\"']?$(.|\\n)*?version: [\"']?(?<currentValue>.+?)[\"']?$"
       ],
       "datasourceTemplate": "helm"
     },
