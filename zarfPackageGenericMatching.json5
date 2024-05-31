@@ -81,7 +81,7 @@
         // Match a chart entry. Test: https://regex101.com/r/loPBI4/1
         "(?m)name:(.|\\n)+?(^\\s{4}[\\w\\-:]+|\\n$|^\\s{2}-|^\\s{6}-)",
         // Match the parts of a chart entry. Test: https://regex101.com/r/2BhQd2/1
-        "(?m)name: [\"']?(?<depName>.+?)[\"']?$(.|\\n)*?version: [\"']?(?<currentValue>.+?)[\"']?$(.|\\n)*?url: [\"']?(?<registryUrl>(https|http|file|git):\\/\\/.+?)[\"']?$"
+        "(?m)name: [\"']?(?<depName>.+?)[\"']?$(.|\\n)*?version: [\"']?(?<currentValue>.+?)[\"']?$(.|\\n)*?url: [\"']?(?<registryUrl>(https|http|file):\\/\\/.+?)[\"']?$"
       ],
       "datasourceTemplate": "helm"
     },
@@ -95,7 +95,7 @@
         // Match a chart entry. Test: https://regex101.com/r/ibpxYd/1
         "(?m)name:(.|\\n)+?(^\\s{4}[\\w\\-:]+|\\n$|^\\s{2}-|^\\s{6}-)",
         // Match the parts of a chart entry. Test: https://regex101.com/r/GgGbkM/1
-        "(?m)name: [\"']?(?<depName>.+?)[\"']?$(.|\\n)*?url: [\"']?(?<registryUrl>(https|http|file|git):\\/\\/.+?)[\"']?$(.|\\n)*?version: [\"']?(?<currentValue>.+?)[\"']?$"
+        "(?m)name: [\"']?(?<depName>.+?)[\"']?$(.|\\n)*?url: [\"']?(?<registryUrl>(https|http|file):\\/\\/.+?)[\"']?$(.|\\n)*?version: [\"']?(?<currentValue>.+?)[\"']?$"
       ],
       "datasourceTemplate": "helm"
     },
