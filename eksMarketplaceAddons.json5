@@ -4,101 +4,25 @@
   "description": "renovate configuration for eks marketplace addons",
 
   "customDatasources": {
-    "vpc-cni": {
-      "defaultRegistryUrlTemplate": "https://raw.githubusercontent.com/zack-is-cool/terraform-aws-eks/refs/heads/main/dependencies/eks-addons-versions.json",
+    "eks-addons": {
+      "defaultRegistryUrlTemplate": "https://raw.githubusercontent.com/efenseunicorns/narwhal-delivery-renovate-config/refs/heads/main/dependencies/eks-addons-versions.json",
       "format": "json",
       "transformTemplates": [
-        "{\"releases\": $.addons[addonName = \"vpc-cni\"].addonVersions[].{\"version\": addonVersion}}"
-      ]
-    },
-    "coredns": {
-      "defaultRegistryUrlTemplate": "https://raw.githubusercontent.com/zack-is-cool/terraform-aws-eks/refs/heads/main/dependencies/eks-addons-versions.json",
-      "format": "json",
-      "transformTemplates": [
-        "{\"releases\": $.addons[addonName = \"coredns\"].addonVersions[].{\"version\": addonVersion}}"
-      ]
-    },
-    "kube-proxy": {
-      "defaultRegistryUrlTemplate": "https://raw.githubusercontent.com/zack-is-cool/terraform-aws-eks/refs/heads/main/dependencies/eks-addons-versions.json",
-      "format": "json",
-      "transformTemplates": [
-        "{\"releases\": $.addons[addonName = \"kube-proxy\"].addonVersions[].{\"version\": addonVersion}}"
-      ]
-    },
-    "aws-ebs-csi-driver": {
-      "defaultRegistryUrlTemplate": "https://raw.githubusercontent.com/zack-is-cool/terraform-aws-eks/refs/heads/main/dependencies/eks-addons-versions.json",
-      "format": "json",
-      "transformTemplates": [
-        "{\"releases\": $.addons[addonName = \"aws-ebs-csi-driver\"].addonVersions[].{\"version\": addonVersion}}"
-      ]
-    },
-    "aws-efs-csi-driver": {
-      "defaultRegistryUrlTemplate": "https://raw.githubusercontent.com/zack-is-cool/terraform-aws-eks/refs/heads/main/dependencies/eks-addons-versions.json",
-      "format": "json",
-      "transformTemplates": [
-        "{\"releases\": $.addons[addonName = \"aws-efs-csi-driver\"].addonVersions[].{\"version\": addonVersion}}"
+        // Use {{{packageName}}} to filter by the captured depName
+        "{ \"releases\": $.addons[addonName = \"{{{packageName}}}\"].addonVersions[].{\"version\": addonVersion} }"
       ]
     }
   },
+
   "customManagers": [
     {
-      // This manager looks for a pinned version in the "vpc-cni" block
       "fileMatch": ["(^|/).*\\.tfvars$"],
-      // For lines like:
-      // vpc-cni = {
-      //   addon_version = "v1.19.0-eksbuild.1"
-      // }
+      // see https://regex101.com/r/Kjv2mb/1
       "matchStrings": [
-        "vpc-cni\\s*=\\s*\\{[^}]*addon_version\\s*=\\s*\"(?<currentValue>v[^\"]+)\""
+        "(?<depName>[A-Za-z0-9-_]+)\\s*=\\s*\\{[^}]*addon_version\\s*=\\s*\"(?<currentValue>v[^\"]+)\""
       ],
-      // It uses the custom datasource named "vpc-cni"
-      "datasourceTemplate": "custom.vpc-cni",
-      "depNameTemplate": "vpc-cni",
-      "versioningTemplate": "loose"
-    },
-    {
-      // This manager looks for a pinned version in the "coredns" block
-      "fileMatch": ["(^|/).*\\.tfvars$"],
-      // For lines like:
-      // coredns = {
-      //   addon_version = "v1.11.4-eksbuild.1"
-      // }
-      "matchStrings": [
-        "coredns\\s*=\\s*\\{[^}]*addon_version\\s*=\\s*\"(?<currentValue>v[^\"]+)\""
-      ],
-      // It uses the custom datasource named "coredns"
-      "datasourceTemplate": "custom.coredns",
-      "depNameTemplate": "coredns",
-      "versioningTemplate": "loose"
-    },
-    // This manager looks for a pinned version in the "kube-proxy" block
-    {
-      "fileMatch": ["(^|/).*\\.tfvars$"],
-      "matchStrings": [
-        "kube-proxy\\s*=\\s*\\{[^}]*addon_version\\s*=\\s*\"(?<currentValue>v[^\"]+)\""
-      ],
-      "datasourceTemplate": "custom.kube-proxy",
-      "depNameTemplate": "kube-proxy",
-      "versioningTemplate": "loose"
-    },
-    // This manager looks for a pinned version in the "aws-ebs-csi-driver" block
-    {
-      "fileMatch": ["(^|/).*\\.tfvars$"],
-      "matchStrings": [
-        "aws-ebs-csi-driver\\s*=\\s*\\{[^}]*addon_version\\s*=\\s*\"(?<currentValue>v[^\"]+)\""
-      ],
-      "datasourceTemplate": "custom.aws-ebs-csi-driver",
-      "depNameTemplate": "aws-ebs-csi-driver",
-      "versioningTemplate": "loose"
-    },
-    // This manager looks for a pinned version in the "aws-efs-csi-driver" block
-    {
-      "fileMatch": ["(^|/).*\\.tfvars$"],
-      "matchStrings": [
-        "aws-efs-csi-driver\\s*=\\s*\\{[^}]*addon_version\\s*=\\s*\"(?<currentValue>v[^\"]+)\""
-      ],
-      "datasourceTemplate": "custom.aws-efs-csi-driver",
-      "depNameTemplate": "aws-efs-csi-driver",
+      "datasourceTemplate": "custom.eks-addons",
+      "depNameTemplate": "{{{depName}}}",
       "versioningTemplate": "loose"
     }
   ]
