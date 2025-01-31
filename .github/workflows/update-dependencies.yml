@@ -27,7 +27,7 @@ jobs:
 
       - name: Populate eks addons dependencies file
         run: |
-          LATEST_EKS_CLUSTER_VERSION=aws eks describe-cluster-versions --query "clusterVersions | sort_by(@, &clusterVersion) | [-1].clusterVersion" --output text
+          LATEST_EKS_CLUSTER_VERSION=$(aws eks describe-cluster-versions --query "clusterVersions | sort_by(@, &clusterVersion) | [-1].clusterVersion" --output text)
           aws eks describe-addon-versions --kubernetes-version $LATEST_EKS_CLUSTER_VERSION > dependencies/eks-addons-versions.json
 
       - name: Sign and push changes using graphql
