@@ -5,7 +5,7 @@
 
   "customDatasources": {
     "eks-addons": {
-      "defaultRegistryUrlTemplate": "https://raw.githubusercontent.com/efenseunicorns/narwhal-delivery-renovate-config/refs/heads/main/dependencies/eks-addons-versions.json",
+      "defaultRegistryUrlTemplate": "https://raw.githubusercontent.com/defenseunicorns/narwhal-delivery-renovate-config/refs/heads/main/dependencies/eks-addons-versions.json",
       "format": "json",
       "transformTemplates": [
         // Use {{{packageName}}} to filter by the captured depName
