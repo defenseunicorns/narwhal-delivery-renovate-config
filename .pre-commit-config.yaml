@@ -14,10 +14,10 @@ repos:
       - id: trailing-whitespace
         args: [--markdown-linebreak-ext=md]
   - repo: https://github.com/sirosen/texthooks
-    rev: 0.6.7
+    rev: 0.6.8
     hooks:
       - id: fix-smartquotes
   - repo: https://github.com/renovatebot/pre-commit-hooks
-    rev: 39.20.3
+    rev: 39.146.1
     hooks:
       - id: renovate-config-validator
