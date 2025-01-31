@@ -1,6 +1,129 @@
 {
     "addons": [
         {
+            "addonName": "coredns",
+            "type": "networking",
+            "addonVersions": [
+                {
+                    "addonVersion": "v1.11.4-eksbuild.2",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "computeTypes": [
+                        "ec2",
+                        "hybrid",
+                        "fargate",
+                        "auto"
+                    ],
+                    "compatibilities": [
+                        {
+                            "clusterVersion": "1.32",
+                            "platformVersions": [
+                                "*"
+                            ],
+                            "defaultVersion": true
+                        }
+                    ],
+                    "requiresConfiguration": false
+                }
+            ],
+            "publisher": "eks",
+            "owner": "aws"
+        },
+        {
+            "addonName": "kube-proxy",
+            "type": "networking",
+            "addonVersions": [
+                {
+                    "addonVersion": "v1.32.0-eksbuild.2",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "computeTypes": [
+                        "ec2",
+                        "hybrid"
+                    ],
+                    "compatibilities": [
+                        {
+                            "clusterVersion": "1.32",
+                            "platformVersions": [
+                                "*"
+                            ],
+                            "defaultVersion": true
+                        }
+                    ],
+                    "requiresConfiguration": false
+                },
+                {
+                    "addonVersion": "v1.31.3-eksbuild.2",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "computeTypes": [
+                        "ec2",
+                        "hybrid"
+                    ],
+                    "compatibilities": [
+                        {
+                            "clusterVersion": "1.32",
+                            "platformVersions": [
+                                "*"
+                            ],
+                            "defaultVersion": false
+                        }
+                    ],
+                    "requiresConfiguration": false
+                },
+                {
+                    "addonVersion": "v1.30.7-eksbuild.2",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "computeTypes": [
+                        "ec2",
+                        "hybrid"
+                    ],
+                    "compatibilities": [
+                        {
+                            "clusterVersion": "1.32",
+                            "platformVersions": [
+                                "*"
+                            ],
+                            "defaultVersion": false
+                        }
+                    ],
+                    "requiresConfiguration": false
+                },
+                {
+                    "addonVersion": "v1.29.11-eksbuild.2",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "computeTypes": [
+                        "ec2",
+                        "hybrid"
+                    ],
+                    "compatibilities": [
+                        {
+                            "clusterVersion": "1.32",
+                            "platformVersions": [
+                                "*"
+                            ],
+                            "defaultVersion": false
+                        }
+                    ],
+                    "requiresConfiguration": false
+                }
+            ],
+            "publisher": "eks",
+            "owner": "aws"
+        },
+        {
             "addonName": "snapshot-controller",
             "type": "storage",
             "addonVersions": [
@@ -123,6 +246,193 @@
                                 "*"
                             ],
                             "defaultVersion": false
+                        }
+                    ],
+                    "requiresConfiguration": false
+                }
+            ],
+            "publisher": "eks",
+            "owner": "aws"
+        },
+        {
+            "addonName": "amazon-cloudwatch-observability",
+            "type": "observability",
+            "addonVersions": [
+                {
+                    "addonVersion": "v3.0.0-eksbuild.1",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "computeTypes": [
+                        "ec2",
+                        "hybrid",
+                        "auto"
+                    ],
+                    "compatibilities": [
+                        {
+                            "clusterVersion": "1.32",
+                            "platformVersions": [
+                                "*"
+                            ],
+                            "defaultVersion": true
+                        }
+                    ],
+                    "requiresConfiguration": false
+                }
+            ],
+            "publisher": "eks",
+            "owner": "aws"
+        },
+        {
+            "addonName": "eks-pod-identity-agent",
+            "type": "security",
+            "addonVersions": [
+                {
+                    "addonVersion": "v1.3.4-eksbuild.1",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "computeTypes": [
+                        "ec2",
+                        "hybrid"
+                    ],
+                    "compatibilities": [
+                        {
+                            "clusterVersion": "1.32",
+                            "platformVersions": [
+                                "*"
+                            ],
+                            "defaultVersion": true
+                        }
+                    ],
+                    "requiresConfiguration": false
+                },
+                {
+                    "addonVersion": "v1.3.2-eksbuild.2",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "computeTypes": [
+                        "ec2"
+                    ],
+                    "compatibilities": [
+                        {
+                            "clusterVersion": "1.32",
+                            "platformVersions": [
+                                "*"
+                            ],
+                            "defaultVersion": false
+                        }
+                    ],
+                    "requiresConfiguration": false
+                },
+                {
+                    "addonVersion": "v1.3.0-eksbuild.1",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "computeTypes": [
+                        "ec2"
+                    ],
+                    "compatibilities": [
+                        {
+                            "clusterVersion": "1.32",
+                            "platformVersions": [
+                                "*"
+                            ],
+                            "defaultVersion": false
+                        }
+                    ],
+                    "requiresConfiguration": false
+                },
+                {
+                    "addonVersion": "v1.2.0-eksbuild.1",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "computeTypes": [
+                        "ec2"
+                    ],
+                    "compatibilities": [
+                        {
+                            "clusterVersion": "1.32",
+                            "platformVersions": [
+                                "*"
+                            ],
+                            "defaultVersion": false
+                        }
+                    ],
+                    "requiresConfiguration": false
+                },
+                {
+                    "addonVersion": "v1.1.0-eksbuild.1",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "computeTypes": [
+                        "ec2"
+                    ],
+                    "compatibilities": [
+                        {
+                            "clusterVersion": "1.32",
+                            "platformVersions": [
+                                "*"
+                            ],
+                            "defaultVersion": false
+                        }
+                    ],
+                    "requiresConfiguration": false
+                },
+                {
+                    "addonVersion": "v1.0.0-eksbuild.1",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "computeTypes": [
+                        "ec2"
+                    ],
+                    "compatibilities": [
+                        {
+                            "clusterVersion": "1.32",
+                            "platformVersions": [
+                                "*"
+                            ],
+                            "defaultVersion": false
+                        }
+                    ],
+                    "requiresConfiguration": false
+                }
+            ],
+            "publisher": "eks",
+            "owner": "aws"
+        },
+        {
+            "addonName": "vpc-cni",
+            "type": "networking",
+            "addonVersions": [
+                {
+                    "addonVersion": "v1.19.2-eksbuild.1",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "computeTypes": [
+                        "ec2"
+                    ],
+                    "compatibilities": [
+                        {
+                            "clusterVersion": "1.32",
+                            "platformVersions": [
+                                "*"
+                            ],
+                            "defaultVersion": true
                         }
                     ],
                     "requiresConfiguration": false
@@ -397,316 +707,6 @@
                 },
                 {
                     "addonVersion": "v1.29.1-eksbuild.1",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "computeTypes": [
-                        "ec2"
-                    ],
-                    "compatibilities": [
-                        {
-                            "clusterVersion": "1.32",
-                            "platformVersions": [
-                                "*"
-                            ],
-                            "defaultVersion": false
-                        }
-                    ],
-                    "requiresConfiguration": false
-                }
-            ],
-            "publisher": "eks",
-            "owner": "aws"
-        },
-        {
-            "addonName": "vpc-cni",
-            "type": "networking",
-            "addonVersions": [
-                {
-                    "addonVersion": "v1.19.2-eksbuild.1",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "computeTypes": [
-                        "ec2"
-                    ],
-                    "compatibilities": [
-                        {
-                            "clusterVersion": "1.32",
-                            "platformVersions": [
-                                "*"
-                            ],
-                            "defaultVersion": true
-                        }
-                    ],
-                    "requiresConfiguration": false
-                }
-            ],
-            "publisher": "eks",
-            "owner": "aws"
-        },
-        {
-            "addonName": "amazon-cloudwatch-observability",
-            "type": "observability",
-            "addonVersions": [
-                {
-                    "addonVersion": "v3.0.0-eksbuild.1",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "computeTypes": [
-                        "ec2",
-                        "hybrid",
-                        "auto"
-                    ],
-                    "compatibilities": [
-                        {
-                            "clusterVersion": "1.32",
-                            "platformVersions": [
-                                "*"
-                            ],
-                            "defaultVersion": true
-                        }
-                    ],
-                    "requiresConfiguration": false
-                }
-            ],
-            "publisher": "eks",
-            "owner": "aws"
-        },
-        {
-            "addonName": "kube-proxy",
-            "type": "networking",
-            "addonVersions": [
-                {
-                    "addonVersion": "v1.32.0-eksbuild.2",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "computeTypes": [
-                        "ec2",
-                        "hybrid"
-                    ],
-                    "compatibilities": [
-                        {
-                            "clusterVersion": "1.32",
-                            "platformVersions": [
-                                "*"
-                            ],
-                            "defaultVersion": true
-                        }
-                    ],
-                    "requiresConfiguration": false
-                },
-                {
-                    "addonVersion": "v1.31.3-eksbuild.2",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "computeTypes": [
-                        "ec2",
-                        "hybrid"
-                    ],
-                    "compatibilities": [
-                        {
-                            "clusterVersion": "1.32",
-                            "platformVersions": [
-                                "*"
-                            ],
-                            "defaultVersion": false
-                        }
-                    ],
-                    "requiresConfiguration": false
-                },
-                {
-                    "addonVersion": "v1.30.7-eksbuild.2",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "computeTypes": [
-                        "ec2",
-                        "hybrid"
-                    ],
-                    "compatibilities": [
-                        {
-                            "clusterVersion": "1.32",
-                            "platformVersions": [
-                                "*"
-                            ],
-                            "defaultVersion": false
-                        }
-                    ],
-                    "requiresConfiguration": false
-                },
-                {
-                    "addonVersion": "v1.29.11-eksbuild.2",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "computeTypes": [
-                        "ec2",
-                        "hybrid"
-                    ],
-                    "compatibilities": [
-                        {
-                            "clusterVersion": "1.32",
-                            "platformVersions": [
-                                "*"
-                            ],
-                            "defaultVersion": false
-                        }
-                    ],
-                    "requiresConfiguration": false
-                }
-            ],
-            "publisher": "eks",
-            "owner": "aws"
-        },
-        {
-            "addonName": "coredns",
-            "type": "networking",
-            "addonVersions": [
-                {
-                    "addonVersion": "v1.11.4-eksbuild.2",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "computeTypes": [
-                        "ec2",
-                        "hybrid",
-                        "fargate",
-                        "auto"
-                    ],
-                    "compatibilities": [
-                        {
-                            "clusterVersion": "1.32",
-                            "platformVersions": [
-                                "*"
-                            ],
-                            "defaultVersion": true
-                        }
-                    ],
-                    "requiresConfiguration": false
-                }
-            ],
-            "publisher": "eks",
-            "owner": "aws"
-        },
-        {
-            "addonName": "eks-pod-identity-agent",
-            "type": "security",
-            "addonVersions": [
-                {
-                    "addonVersion": "v1.3.4-eksbuild.1",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "computeTypes": [
-                        "ec2",
-                        "hybrid"
-                    ],
-                    "compatibilities": [
-                        {
-                            "clusterVersion": "1.32",
-                            "platformVersions": [
-                                "*"
-                            ],
-                            "defaultVersion": true
-                        }
-                    ],
-                    "requiresConfiguration": false
-                },
-                {
-                    "addonVersion": "v1.3.2-eksbuild.2",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "computeTypes": [
-                        "ec2"
-                    ],
-                    "compatibilities": [
-                        {
-                            "clusterVersion": "1.32",
-                            "platformVersions": [
-                                "*"
-                            ],
-                            "defaultVersion": false
-                        }
-                    ],
-                    "requiresConfiguration": false
-                },
-                {
-                    "addonVersion": "v1.3.0-eksbuild.1",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "computeTypes": [
-                        "ec2"
-                    ],
-                    "compatibilities": [
-                        {
-                            "clusterVersion": "1.32",
-                            "platformVersions": [
-                                "*"
-                            ],
-                            "defaultVersion": false
-                        }
-                    ],
-                    "requiresConfiguration": false
-                },
-                {
-                    "addonVersion": "v1.2.0-eksbuild.1",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "computeTypes": [
-                        "ec2"
-                    ],
-                    "compatibilities": [
-                        {
-                            "clusterVersion": "1.32",
-                            "platformVersions": [
-                                "*"
-                            ],
-                            "defaultVersion": false
-                        }
-                    ],
-                    "requiresConfiguration": false
-                },
-                {
-                    "addonVersion": "v1.1.0-eksbuild.1",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "computeTypes": [
-                        "ec2"
-                    ],
-                    "compatibilities": [
-                        {
-                            "clusterVersion": "1.32",
-                            "platformVersions": [
-                                "*"
-                            ],
-                            "defaultVersion": false
-                        }
-                    ],
-                    "requiresConfiguration": false
-                },
-                {
-                    "addonVersion": "v1.0.0-eksbuild.1",
                     "architecture": [
                         "amd64",
                         "arm64"
