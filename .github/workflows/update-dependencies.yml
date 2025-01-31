@@ -23,7 +23,7 @@ jobs:
           role-to-assume: ${{ secrets.NARWHAL_AWS_GOVCLOUD_ROLE_TO_ASSUME }}
           role-session-name: ${{ github.repository_owner }}_${{ github.event.repository.name }}
           aws-region: us-gov-west-1
-          role-duration-seconds: 300
+          role-duration-seconds: 900
 
       - name: Populate eks addons dependencies file
         run: |
