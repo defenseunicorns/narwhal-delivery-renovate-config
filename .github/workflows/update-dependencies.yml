@@ -28,7 +28,27 @@ jobs:
       - name: Populate eks addons dependencies file
         run: |
           LATEST_EKS_CLUSTER_VERSION=$(aws eks describe-cluster-versions --query "clusterVersions | sort_by(@, &clusterVersion) | [-1].clusterVersion" --output text)
-          aws eks describe-addon-versions --kubernetes-version $LATEST_EKS_CLUSTER_VERSION > dependencies/eks-addons-versions.json
+
+          # Get addon versions for the latest EKS cluster version, sort them by name, and remove unneeded fields
+          # this needs to be sorted because AWS's api just returns them in a random order every time :(
+          aws eks describe-addon-versions --kubernetes-version "$LATEST_EKS_CLUSTER_VERSION" \
+            | jq '
+            # Sort addons by name
+            .addons |= sort_by(.addonName)
+
+            # For each addon object:
+            | .addons[] |= (
+                # Delete publisher and owner
+                del(.publisher, .owner)
+
+                # Sort .addonVersions by version, reverse it, and remove unneeded fields
+                | .addonVersions |= (
+                    sort_by(.addonVersion)
+                    | reverse
+                      | map(del(.architecture, .compatibilities, .computeTypes, .requiresConfiguration))
+                  )
+              )
+          ' > dependencies/eks-addons-dependencies.json
 
       - name: Sign and push changes using graphql
         uses: planetscale/ghcommit-action@v0.2.4
