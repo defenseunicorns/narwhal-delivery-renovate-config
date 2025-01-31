@@ -16,7 +16,10 @@
 
   "customManagers": [
     {
-      "fileMatch": ["(^|/).*\\.tfvars$"],
+      "fileMatch": [
+        "(^|/).*\\.tfvars$",
+        "(^|/).*\\.tf$"
+      ],
       // see https://regex101.com/r/Kjv2mb/1
       "matchStrings": [
         "(?<depName>[A-Za-z0-9-_]+)\\s*=\\s*\\{[^}]*addon_version\\s*=\\s*\"(?<currentValue>v[^\"]+)\""
