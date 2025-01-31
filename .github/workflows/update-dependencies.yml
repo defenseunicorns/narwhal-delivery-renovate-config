@@ -48,7 +48,7 @@ jobs:
                       | map(del(.architecture, .compatibilities, .computeTypes, .requiresConfiguration))
                   )
               )
-          ' > dependencies/eks-addons-dependencies.json
+          ' > dependencies/eks-addons-versions.json
 
       - name: Sign and push changes using graphql
         uses: planetscale/ghcommit-action@v0.2.4
