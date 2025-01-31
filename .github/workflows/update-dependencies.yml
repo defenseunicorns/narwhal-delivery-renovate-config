@@ -33,22 +33,25 @@ jobs:
           # this needs to be sorted because AWS's api just returns them in a random order every time :(
           aws eks describe-addon-versions --kubernetes-version "$LATEST_EKS_CLUSTER_VERSION" \
             | jq '
-            # Sort addons by name
-            .addons |= sort_by(.addonName)
+              .addons |= (
+                # Sort the addons by name
+                sort_by(.addonName)
 
-            # For each addon object:
-            | .addons[] |= (
-                # Delete publisher and owner
-                del(.publisher, .owner)
-
-                # Sort .addonVersions by version, reverse it, and remove unneeded fields
-                | .addonVersions |= (
-                    sort_by(.addonVersion)
-                    | reverse
-                      | map(del(.architecture, .compatibilities, .computeTypes, .requiresConfiguration))
-                  )
+                # Rebuild each add-on object
+                | map({
+                    addonName: .addonName,
+                    addonVersions: (
+                      # 3) Sort, reverse, and select addonVersion
+                      .addonVersions
+                      | sort_by(.addonVersion)
+                      | reverse
+                      | map({
+                          addonVersion: .addonVersion
+                        })
+                    )
+                  })
               )
-          ' > dependencies/eks-addons-versions.json
+            ' > dependencies/eks-addons-versions.json
 
       - name: Sign and push changes using graphql
         uses: planetscale/ghcommit-action@v0.2.4
