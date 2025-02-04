@@ -9,6 +9,7 @@
       "format": "json",
       "transformTemplates": [
         // Use {{{packageName}}} to filter by the captured depName
+        // see https://try.jsonata.org/htAy0eXsP
         "{ \"releases\": $.addons[addonName = \"{{{packageName}}}\"].addonVersions[].{\"version\": addonVersion} }"
       ]
     }
