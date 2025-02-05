@@ -21,9 +21,16 @@
         "(^|/).*\\.tfvars$",
         "(^|/).*\\.tf$"
       ],
-      // see https://regex101.com/r/Kjv2mb/1
+      // see https://regex101.com/r/Kjv2mb/2
+      // This regex relies on at least 2-space indentation to capture EKS add-on blocks
+      // (like "vpc-cni" or "kube-proxy") and skip top-level blocks such as "cluster_addons".
+      // We use a tempered dot pattern so the match doesn't continue into the next sibling block
+      // at the same indentation. However, this is NOT a full HCL parser: HCL is hierarchical by
+      // design, and a single regex cannot reliably distinguish parent vs. child blocks in all
+      // edge cases. In this codebase, consistent indentation and placement of add-on blocks makes
+      // this approach work well enough for Renovate's version extraction.
       "matchStrings": [
-        "(?<depName>[A-Za-z0-9-_]+)\\s*=\\s*\\{[^}]*addon_version\\s*=\\s*\"(?<currentValue>v[^\"]+)\""
+        "(?ms)^ {2,}(?<depname>[\\w-]+)\\s*=\\s*\\{(?:(?!^ {2,}[\\w-]+\\s*=\\s*\\{).)*?addon_version\\s*=\\s*\"(?<currentValue>[^\"]+)\""
       ],
       "datasourceTemplate": "custom.eks-addons",
       "depNameTemplate": "{{{depName}}}",
