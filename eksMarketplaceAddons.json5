@@ -14,7 +14,6 @@
       ]
     }
   },
-
   "customManagers": [
     {
       "fileMatch": [
@@ -22,7 +21,7 @@
       ],
       // https://regex101.com/r/BI4jcu/1
       "matchStrings": [
-        "(?<depName>[a-zA-Z0-9_-]+)\\s*=\\s*\\{\\s*.*\\s*addon_version\\s*=\\s*\"(?<currentValue>[^\\"]+)\""
+        '(?<depName>[a-zA-Z0-9_-]+)\\s*=\\s*\\{\\s*.*\\s*addon_version\\s*=\\s*\"(?<currentValue>[^\\"]+)\"'
       ],
       "datasourceTemplate": "custom.eks-addons",
       "depNameTemplate": "{{{depName}}}",
