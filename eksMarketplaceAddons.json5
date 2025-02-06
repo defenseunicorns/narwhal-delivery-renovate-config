@@ -21,11 +21,9 @@
         "(^|/).*\\.tfvars$",
         "(^|/).*\\.tf$"
       ],
-      // addons populated by using - aws eks describe-addon-versions --kubernetes-version 1.32 | jq -r '[.addons[].addonName] | sort | join("|")'
-      // amazon-cloudwatch-observability|aws-ebs-csi-driver|aws-efs-csi-driver|coredns|eks-pod-identity-agent|kube-proxy|snapshot-controller|vpc-cni
-      // see https://regex101.com/r/Kjv2mb/3
+      // https://regex101.com/r/BI4jcu/1
       "matchStrings": [
-        "(?m)^\\s{2,}(?<depName>amazon-cloudwatch-observability|aws-ebs-csi-driver|aws-efs-csi-driver|coredns|eks-pod-identity-agent|kube-proxy|snapshot-controller|vpc-cni)\\s*=\\s*\\{[\\s\\S]*?addon_version\\s*=\\s*\"(?<currentValue>[^\"]+)\""
+        "(?<depName>[a-zA-Z0-9_-]+)\\s*=\\s*\\{\\s*.*\\s*addon_version\\s*=\\s*\"(?<currentValue>[^\\"]+)\""
       ],
       "datasourceTemplate": "custom.eks-addons",
       "depNameTemplate": "{{{depName}}}",
