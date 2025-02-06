@@ -18,8 +18,7 @@
   "customManagers": [
     {
       "fileMatch": [
-        "(^|/).*\\.tfvars$",
-        "(^|/).*\\.tf$"
+        "(^|/).*\\.tf.*"
       ],
       // https://regex101.com/r/BI4jcu/1
       "matchStrings": [
