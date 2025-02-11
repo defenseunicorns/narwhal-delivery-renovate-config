@@ -4,6 +4,9 @@
       "addonName": "amazon-cloudwatch-observability",
       "addonVersions": [
         {
+          "addonVersion": "v3.3.0-eksbuild.1"
+        },
+        {
           "addonVersion": "v3.2.0-eksbuild.1"
         },
         {
@@ -204,6 +207,9 @@
     {
       "addonName": "snapshot-controller",
       "addonVersions": [
+        {
+          "addonVersion": "v8.2.0-eksbuild.1"
+        },
         {
           "addonVersion": "v8.1.0-eksbuild.2"
         },
