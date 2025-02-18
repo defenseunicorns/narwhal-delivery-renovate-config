@@ -168,6 +168,9 @@
       "addonName": "eks-pod-identity-agent",
       "addonVersions": [
         {
+          "addonVersion": "v1.3.5-eksbuild.2"
+        },
+        {
           "addonVersion": "v1.3.4-eksbuild.1"
         },
         {
