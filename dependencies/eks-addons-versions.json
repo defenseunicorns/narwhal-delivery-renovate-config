@@ -160,6 +160,14 @@
       ]
     },
     {
+      "addonName": "aws-mountpoint-s3-csi-driver",
+      "addonVersions": [
+        {
+          "addonVersion": "v1.11.0-eksbuild.1"
+        }
+      ]
+    },
+    {
       "addonName": "coredns",
       "addonVersions": [
         {
