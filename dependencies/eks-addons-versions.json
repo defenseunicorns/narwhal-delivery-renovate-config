@@ -74,6 +74,9 @@
       "addonName": "aws-efs-csi-driver",
       "addonVersions": [
         {
+          "addonVersion": "v2.1.6-eksbuild.1"
+        },
+        {
           "addonVersion": "v2.1.4-eksbuild.1"
         },
         {
@@ -162,6 +165,9 @@
     {
       "addonName": "aws-mountpoint-s3-csi-driver",
       "addonVersions": [
+        {
+          "addonVersion": "v1.12.0-eksbuild.1"
+        },
         {
           "addonVersion": "v1.11.0-eksbuild.1"
         }
@@ -253,6 +259,9 @@
     {
       "addonName": "vpc-cni",
       "addonVersions": [
+        {
+          "addonVersion": "v1.19.3-eksbuild.1"
+        },
         {
           "addonVersion": "v1.19.2-eksbuild.5"
         },
