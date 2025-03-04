@@ -25,7 +25,7 @@
       ],
       "datasourceTemplate": "custom.eks-addons",
       "depNameTemplate": "{{{depName}}}",
-      "versioningTemplate": "loose"
+      "versioningTemplate": "aws-eks-addons"
     }
   ]
 }
