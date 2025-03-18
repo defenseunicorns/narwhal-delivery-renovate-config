@@ -4,6 +4,9 @@
       "addonName": "amazon-cloudwatch-observability",
       "addonVersions": [
         {
+          "addonVersion": "v3.4.0-eksbuild.1"
+        },
+        {
           "addonVersion": "v3.3.1-eksbuild.1"
         },
         {
@@ -24,7 +27,13 @@
       "addonName": "aws-ebs-csi-driver",
       "addonVersions": [
         {
+          "addonVersion": "v1.40.1-eksbuild.1"
+        },
+        {
           "addonVersion": "v1.40.0-eksbuild.1"
+        },
+        {
+          "addonVersion": "v1.39.1-eksbuild.1"
         },
         {
           "addonVersion": "v1.39.0-eksbuild.1"
