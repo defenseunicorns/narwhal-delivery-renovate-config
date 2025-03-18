@@ -15,10 +15,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
 
       - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v4
+        uses: aws-actions/configure-aws-credentials@e3dd6a429d7300a6a4c196c26e071d42e0343502 # v4
         with:
           role-to-assume: ${{ secrets.NARWHAL_AWS_GOVCLOUD_ROLE_TO_ASSUME }}
           role-session-name: ${{ github.repository_owner }}_${{ github.event.repository.name }}
@@ -54,7 +54,7 @@ jobs:
             ' > dependencies/eks-addons-versions.json
 
       - name: Sign and push changes using graphql
-        uses: planetscale/ghcommit-action@v0.2.5
+        uses: planetscale/ghcommit-action@c6125dee9e9c0daebc4adea9f68ead8293414174 # v0.2.9
         with:
           commit_message: "Update dependencies"
           repo: ${{ github.repository }}
