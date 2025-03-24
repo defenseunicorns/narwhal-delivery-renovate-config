@@ -19,9 +19,11 @@
       "fileMatch": [
         "(^|/).*\\.tf.*"
       ],
-      // https://regex101.com/r/BI4jcu/1
+      // https://regex101.com/r/BI4jcu/2
+      // Will not work if there's a parallel config with {} above the addon_version (e.g. timeout = {...}); but usually
+      // people put the addon_version towards the top of the block
       "matchStrings": [
-        '(?<depName>[a-zA-Z0-9_-]+)\\s*=\\s*\\{\\s*.*\\s*addon_version\\s*=\\s*\"(?<currentValue>[^\\"]+)\"'
+        '(?<depName>[a-zA-Z0-9_-]+)\\s*=\\s*\\{\\s*[^{]*?\\s*addon_version\\s*=\\s*\"(?<currentValue>[^\\"]+)\"'
       ],
       "datasourceTemplate": "custom.eks-addons",
       "depNameTemplate": "{{{depName}}}",
