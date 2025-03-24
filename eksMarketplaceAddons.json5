@@ -19,9 +19,30 @@
       "fileMatch": [
         "(^|/).*\\.tf.*"
       ],
-      // https://regex101.com/r/BI4jcu/1
+      // RE2-compatible regex pattern for matching addon versions in Terraform configs
+      // Pattern: \b(?<depName>[a-zA-Z0-9_-]+)\s*=\s*\{([^{}]|\{([^{}])*\})*?addon_version\s*=\s*"(?<currentValue>[^"]+)"
+      //
+      // What it does:
+      // - Captures dependency names (like "coredns" or "aws-efs-csi-driver") in the "depName" group
+      // - Captures version values (like "v1.11.4-eksbuild.1") in the "currentValue" group
+      // - Ignores "timeouts" blocks regardless of their position within the config
+      //
+      // How it works:
+      // - \b ensures we match complete property names (word boundary)
+      // - (?<depName>[a-zA-Z0-9_-]+) captures the dependency name
+      // - \s*=\s*\{ matches equals sign and opening brace with optional whitespace
+      // - ([^{}]|\{([^{}])*\})*? handles one level of nested braces non-greedily
+      // - addon_version\s*=\s* matches the version property
+      // - "(?<currentValue>[^"]+)" captures the version string
+      //
+      // Notes:
+      // - Works with RE2 library (no lookaheads/lookbehinds)
+      // - Handles nested structures like timeouts blocks before or after addon_version
+      // - Uses non-greedy matching to find the closest version to each dependency
+
+      // https://regex101.com/r/RLa07E/1
       "matchStrings": [
-        '(?<depName>[a-zA-Z0-9_-]+)\\s*=\\s*\\{\\s*.*\\s*addon_version\\s*=\\s*\"(?<currentValue>[^\\"]+)\"'
+        '\\b(?<depName>[a-zA-Z0-9_-]+)\\s*=\\s*\\{([^{}]|\\{([^{}])*\\})*?addon_version\\s*=\\s*"(?<currentValue>[^"]+)"'
       ],
       "datasourceTemplate": "custom.eks-addons",
       "depNameTemplate": "{{{depName}}}",
