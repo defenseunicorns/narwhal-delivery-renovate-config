@@ -92,6 +92,9 @@
       "addonName": "aws-efs-csi-driver",
       "addonVersions": [
         {
+          "addonVersion": "v2.1.7-eksbuild.1"
+        },
+        {
           "addonVersion": "v2.1.6-eksbuild.1"
         },
         {
