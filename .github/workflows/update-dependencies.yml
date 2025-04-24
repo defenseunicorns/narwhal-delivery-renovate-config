@@ -54,7 +54,7 @@ jobs:
             ' > dependencies/eks-addons-versions.json
 
       - name: Sign and push changes using graphql
-        uses: planetscale/ghcommit-action@c6125dee9e9c0daebc4adea9f68ead8293414174 # v0.2.9
+        uses: planetscale/ghcommit-action@ad67f0d18be6a3070fc893dce128fd5408624130 # v0.2.12
         with:
           commit_message: "Update dependencies"
           repo: ${{ github.repository }}
