@@ -193,6 +193,9 @@
       "addonName": "aws-mountpoint-s3-csi-driver",
       "addonVersions": [
         {
+          "addonVersion": "v1.14.1-eksbuild.1"
+        },
+        {
           "addonVersion": "v1.13.0-eksbuild.1"
         },
         {
