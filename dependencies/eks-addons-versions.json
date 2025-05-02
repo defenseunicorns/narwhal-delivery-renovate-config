@@ -222,6 +222,9 @@
       "addonVersions": [
         {
           "addonVersion": "v1.11.4-eksbuild.2"
+        },
+        {
+          "addonVersion": "v1.11.4-eksbuild.10"
         }
       ]
     },
@@ -255,10 +258,16 @@
       "addonName": "kube-proxy",
       "addonVersions": [
         {
+          "addonVersion": "v1.32.3-eksbuild.7"
+        },
+        {
           "addonVersion": "v1.32.3-eksbuild.2"
         },
         {
           "addonVersion": "v1.32.0-eksbuild.2"
+        },
+        {
+          "addonVersion": "v1.31.7-eksbuild.7"
         },
         {
           "addonVersion": "v1.31.3-eksbuild.2"
@@ -268,6 +277,12 @@
         },
         {
           "addonVersion": "v1.30.7-eksbuild.2"
+        },
+        {
+          "addonVersion": "v1.30.11-eksbuild.5"
+        },
+        {
+          "addonVersion": "v1.29.15-eksbuild.5"
         },
         {
           "addonVersion": "v1.29.13-eksbuild.3"
