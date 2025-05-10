@@ -44,6 +44,9 @@
       "addonName": "aws-ebs-csi-driver",
       "addonVersions": [
         {
+          "addonVersion": "v1.43.0-eksbuild.1"
+        },
+        {
           "addonVersion": "v1.42.0-eksbuild.1"
         },
         {
