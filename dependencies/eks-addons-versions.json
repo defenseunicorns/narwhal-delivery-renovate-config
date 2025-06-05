@@ -222,6 +222,9 @@
           "addonVersion": "v1.11.4-eksbuild.10"
         },
         {
+          "addonVersion": "v1.11.3-eksbuild.3"
+        },
+        {
           "addonVersion": "v1.11.3-eksbuild.2"
         }
       ]
