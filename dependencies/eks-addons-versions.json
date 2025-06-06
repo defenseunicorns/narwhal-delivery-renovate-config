@@ -274,10 +274,16 @@
           "addonVersion": "v1.32.0-eksbuild.2"
         },
         {
+          "addonVersion": "v1.31.7-eksbuild.7"
+        },
+        {
           "addonVersion": "v1.31.3-eksbuild.2"
         },
         {
           "addonVersion": "v1.30.9-eksbuild.3"
+        },
+        {
+          "addonVersion": "v1.30.11-eksbuild.5"
         }
       ]
     },
