@@ -193,6 +193,14 @@
       ]
     },
     {
+      "addonName": "aws-fsx-csi-driver",
+      "addonVersions": [
+        {
+          "addonVersion": "v1.3.0-eksbuild.1"
+        }
+      ]
+    },
+    {
       "addonName": "aws-mountpoint-s3-csi-driver",
       "addonVersions": [
         {
@@ -215,6 +223,9 @@
     {
       "addonName": "coredns",
       "addonVersions": [
+        {
+          "addonVersion": "v1.12.2-eksbuild.1"
+        },
         {
           "addonVersion": "v1.12.1-eksbuild.2"
         },
