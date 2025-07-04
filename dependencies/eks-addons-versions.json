@@ -98,6 +98,9 @@
       "addonName": "aws-efs-csi-driver",
       "addonVersions": [
         {
+          "addonVersion": "v2.1.9-eksbuild.1"
+        },
+        {
           "addonVersion": "v2.1.8-eksbuild.1"
         },
         {
@@ -204,6 +207,9 @@
       "addonName": "aws-mountpoint-s3-csi-driver",
       "addonVersions": [
         {
+          "addonVersion": "v1.15.0-eksbuild.1"
+        },
+        {
           "addonVersion": "v1.14.1-eksbuild.1"
         },
         {
@@ -224,7 +230,7 @@
       "addonName": "coredns",
       "addonVersions": [
         {
-          "addonVersion": "v1.12.2-eksbuild.1"
+          "addonVersion": "v1.12.2-eksbuild.4"
         },
         {
           "addonVersion": "v1.12.1-eksbuild.2"
@@ -269,6 +275,9 @@
     {
       "addonName": "eks-pod-identity-agent",
       "addonVersions": [
+        {
+          "addonVersion": "v1.3.8-eksbuild.2"
+        },
         {
           "addonVersion": "v1.3.7-eksbuild.2"
         },
