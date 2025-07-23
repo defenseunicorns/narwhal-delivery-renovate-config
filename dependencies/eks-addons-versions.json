@@ -27,6 +27,9 @@
       "addonName": "aws-ebs-csi-driver",
       "addonVersions": [
         {
+          "addonVersion": "v1.46.0-eksbuild.1"
+        },
+        {
           "addonVersion": "v1.45.0-eksbuild.2"
         },
         {
@@ -386,6 +389,9 @@
     {
       "addonName": "vpc-cni",
       "addonVersions": [
+        {
+          "addonVersion": "v1.20.0-eksbuild.1"
+        },
         {
           "addonVersion": "v1.19.6-eksbuild.7"
         },
