@@ -344,10 +344,46 @@
           "addonVersion": "v1.31.3-eksbuild.2"
         },
         {
+          "addonVersion": "v1.31.2-eksbuild.3"
+        },
+        {
+          "addonVersion": "v1.31.2-eksbuild.2"
+        },
+        {
           "addonVersion": "v1.31.10-eksbuild.2"
         },
         {
+          "addonVersion": "v1.31.1-eksbuild.2"
+        },
+        {
+          "addonVersion": "v1.31.0-eksbuild.5"
+        },
+        {
+          "addonVersion": "v1.31.0-eksbuild.2"
+        },
+        {
           "addonVersion": "v1.30.9-eksbuild.3"
+        },
+        {
+          "addonVersion": "v1.30.7-eksbuild.2"
+        },
+        {
+          "addonVersion": "v1.30.6-eksbuild.3"
+        },
+        {
+          "addonVersion": "v1.30.6-eksbuild.2"
+        },
+        {
+          "addonVersion": "v1.30.5-eksbuild.2"
+        },
+        {
+          "addonVersion": "v1.30.3-eksbuild.9"
+        },
+        {
+          "addonVersion": "v1.30.3-eksbuild.5"
+        },
+        {
+          "addonVersion": "v1.30.3-eksbuild.2"
         },
         {
           "addonVersion": "v1.30.14-eksbuild.2"
@@ -357,6 +393,12 @@
         },
         {
           "addonVersion": "v1.30.11-eksbuild.5"
+        },
+        {
+          "addonVersion": "v1.30.0-eksbuild.3"
+        },
+        {
+          "addonVersion": "v1.30.0-eksbuild.2"
         }
       ]
     },
