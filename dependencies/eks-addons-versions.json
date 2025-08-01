@@ -4,6 +4,9 @@
       "addonName": "amazon-cloudwatch-observability",
       "addonVersions": [
         {
+          "addonVersion": "v4.3.0-eksbuild.1"
+        },
+        {
           "addonVersion": "v4.2.1-eksbuild.1"
         },
         {
@@ -254,10 +257,37 @@
           "addonVersion": "v1.11.4-eksbuild.10"
         },
         {
+          "addonVersion": "v1.11.4-eksbuild.1"
+        },
+        {
           "addonVersion": "v1.11.3-eksbuild.3"
         },
         {
           "addonVersion": "v1.11.3-eksbuild.2"
+        },
+        {
+          "addonVersion": "v1.11.3-eksbuild.1"
+        },
+        {
+          "addonVersion": "v1.11.1-eksbuild.9"
+        },
+        {
+          "addonVersion": "v1.11.1-eksbuild.8"
+        },
+        {
+          "addonVersion": "v1.11.1-eksbuild.6"
+        },
+        {
+          "addonVersion": "v1.11.1-eksbuild.4"
+        },
+        {
+          "addonVersion": "v1.11.1-eksbuild.3"
+        },
+        {
+          "addonVersion": "v1.11.1-eksbuild.13"
+        },
+        {
+          "addonVersion": "v1.11.1-eksbuild.11"
         }
       ]
     },
