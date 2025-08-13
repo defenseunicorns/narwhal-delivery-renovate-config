@@ -445,6 +445,9 @@
       "addonName": "snapshot-controller",
       "addonVersions": [
         {
+          "addonVersion": "v8.3.0-eksbuild.1"
+        },
+        {
           "addonVersion": "v8.2.0-eksbuild.1"
         },
         {
@@ -470,6 +473,9 @@
     {
       "addonName": "vpc-cni",
       "addonVersions": [
+        {
+          "addonVersion": "v1.20.1-eksbuild.1"
+        },
         {
           "addonVersion": "v1.20.0-eksbuild.1"
         },
