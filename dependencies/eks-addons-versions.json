@@ -4,6 +4,9 @@
       "addonName": "amazon-cloudwatch-observability",
       "addonVersions": [
         {
+          "addonVersion": "v4.3.1-eksbuild.1"
+        },
+        {
           "addonVersion": "v4.3.0-eksbuild.1"
         },
         {
@@ -215,6 +218,17 @@
       "addonVersions": [
         {
           "addonVersion": "v1.3.0-eksbuild.1"
+        }
+      ]
+    },
+    {
+      "addonName": "aws-guardduty-agent",
+      "addonVersions": [
+        {
+          "addonVersion": "v1.11.0-eksbuild.2"
+        },
+        {
+          "addonVersion": "v1.11.0-eksbuild.1"
         }
       ]
     },
