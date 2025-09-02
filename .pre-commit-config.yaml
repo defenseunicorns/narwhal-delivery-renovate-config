@@ -18,6 +18,6 @@ repos:
     hooks:
       - id: fix-smartquotes
   - repo: https://github.com/renovatebot/pre-commit-hooks
-    rev: 41.92.1
+    rev: 41.93.2
     hooks:
       - id: renovate-config-validator
