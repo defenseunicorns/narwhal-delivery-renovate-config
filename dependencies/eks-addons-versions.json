@@ -140,6 +140,9 @@
           "addonVersion": "v2.1.2-eksbuild.1"
         },
         {
+          "addonVersion": "v2.1.11-eksbuild.1"
+        },
+        {
           "addonVersion": "v2.1.10-eksbuild.1"
         },
         {
@@ -230,6 +233,12 @@
     {
       "addonName": "aws-guardduty-agent",
       "addonVersions": [
+        {
+          "addonVersion": "v1.11.0-eksbuild.4"
+        },
+        {
+          "addonVersion": "v1.11.0-eksbuild.3"
+        },
         {
           "addonVersion": "v1.11.0-eksbuild.2"
         },
