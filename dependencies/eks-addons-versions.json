@@ -280,6 +280,41 @@
       ]
     },
     {
+      "addonName": "cert-manager",
+      "addonVersions": [
+        {
+          "addonVersion": "v1.18.2-eksbuild.2"
+        },
+        {
+          "addonVersion": "v1.18.2-eksbuild.1"
+        },
+        {
+          "addonVersion": "v1.18.1-eksbuild.1"
+        },
+        {
+          "addonVersion": "v1.18.0-eksbuild.2"
+        },
+        {
+          "addonVersion": "v1.18.0-eksbuild.1"
+        },
+        {
+          "addonVersion": "v1.17.4-eksbuild.1"
+        },
+        {
+          "addonVersion": "v1.17.3-eksbuild.1"
+        },
+        {
+          "addonVersion": "v1.17.2-eksbuild.1"
+        },
+        {
+          "addonVersion": "v1.17.1-eksbuild.2"
+        },
+        {
+          "addonVersion": "v1.17.1-eksbuild.1"
+        }
+      ]
+    },
+    {
       "addonName": "coredns",
       "addonVersions": [
         {
@@ -400,6 +435,58 @@
       ]
     },
     {
+      "addonName": "external-dns",
+      "addonVersions": [
+        {
+          "addonVersion": "v0.19.0-eksbuild.2"
+        },
+        {
+          "addonVersion": "v0.19.0-eksbuild.1"
+        },
+        {
+          "addonVersion": "v0.18.0-eksbuild.2"
+        },
+        {
+          "addonVersion": "v0.18.0-eksbuild.1"
+        },
+        {
+          "addonVersion": "v0.17.0-eksbuild.2"
+        },
+        {
+          "addonVersion": "v0.17.0-eksbuild.1"
+        },
+        {
+          "addonVersion": "v0.16.1-eksbuild.2"
+        }
+      ]
+    },
+    {
+      "addonName": "fluent-bit",
+      "addonVersions": [
+        {
+          "addonVersion": "v4.0.9-eksbuild.1"
+        },
+        {
+          "addonVersion": "v4.0.8-eksbuild.1"
+        },
+        {
+          "addonVersion": "v4.0.7-eksbuild.1"
+        },
+        {
+          "addonVersion": "v4.0.6-eksbuild.1"
+        },
+        {
+          "addonVersion": "v4.0.5-eksbuild.1"
+        },
+        {
+          "addonVersion": "v4.0.4-eksbuild.1"
+        },
+        {
+          "addonVersion": "v4.0.3-eksbuild.1"
+        }
+      ]
+    },
+    {
       "addonName": "kube-proxy",
       "addonVersions": [
         {
@@ -509,6 +596,72 @@
         },
         {
           "addonVersion": "v1.30.0-eksbuild.2"
+        }
+      ]
+    },
+    {
+      "addonName": "kube-state-metrics",
+      "addonVersions": [
+        {
+          "addonVersion": "v2.17.0-eksbuild.1"
+        },
+        {
+          "addonVersion": "v2.16.0-eksbuild.2"
+        },
+        {
+          "addonVersion": "v2.16.0-eksbuild.1"
+        },
+        {
+          "addonVersion": "v2.15.0-eksbuild.5"
+        },
+        {
+          "addonVersion": "v2.15.0-eksbuild.4"
+        },
+        {
+          "addonVersion": "v2.15.0-eksbuild.3"
+        }
+      ]
+    },
+    {
+      "addonName": "metrics-server",
+      "addonVersions": [
+        {
+          "addonVersion": "v0.8.0-eksbuild.2"
+        },
+        {
+          "addonVersion": "v0.8.0-eksbuild.1"
+        },
+        {
+          "addonVersion": "v0.7.2-eksbuild.4"
+        },
+        {
+          "addonVersion": "v0.7.2-eksbuild.3"
+        },
+        {
+          "addonVersion": "v0.7.2-eksbuild.2"
+        },
+        {
+          "addonVersion": "v0.7.2-eksbuild.1"
+        }
+      ]
+    },
+    {
+      "addonName": "prometheus-node-exporter",
+      "addonVersions": [
+        {
+          "addonVersion": "v1.9.1-eksbuild.4"
+        },
+        {
+          "addonVersion": "v1.9.1-eksbuild.3"
+        },
+        {
+          "addonVersion": "v1.9.1-eksbuild.2"
+        },
+        {
+          "addonVersion": "v1.9.1-eksbuild.1"
+        },
+        {
+          "addonVersion": "v1.9.0-eksbuild.3"
         }
       ]
     },
