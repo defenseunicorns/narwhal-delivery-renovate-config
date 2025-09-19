@@ -318,6 +318,9 @@
       "addonName": "coredns",
       "addonVersions": [
         {
+          "addonVersion": "v1.12.4-eksbuild.1"
+        },
+        {
           "addonVersion": "v1.12.3-eksbuild.1"
         },
         {
