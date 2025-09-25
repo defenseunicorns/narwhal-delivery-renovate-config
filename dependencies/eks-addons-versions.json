@@ -232,6 +232,9 @@
       "addonName": "aws-fsx-csi-driver",
       "addonVersions": [
         {
+          "addonVersion": "v1.6.0-eksbuild.1"
+        },
+        {
           "addonVersion": "v1.3.0-eksbuild.1"
         }
       ]
@@ -486,6 +489,9 @@
         },
         {
           "addonVersion": "v4.0.3-eksbuild.1"
+        },
+        {
+          "addonVersion": "v4.0.10-eksbuild.1"
         }
       ]
     },
@@ -700,6 +706,9 @@
     {
       "addonName": "vpc-cni",
       "addonVersions": [
+        {
+          "addonVersion": "v1.20.2-eksbuild.1"
+        },
         {
           "addonVersion": "v1.20.1-eksbuild.3"
         },
