@@ -658,6 +658,9 @@
       "addonName": "prometheus-node-exporter",
       "addonVersions": [
         {
+          "addonVersion": "v1.9.1-eksbuild.5"
+        },
+        {
           "addonVersion": "v1.9.1-eksbuild.4"
         },
         {
