@@ -621,6 +621,9 @@
       "addonName": "kube-state-metrics",
       "addonVersions": [
         {
+          "addonVersion": "v2.17.0-eksbuild.2"
+        },
+        {
           "addonVersion": "v2.17.0-eksbuild.1"
         },
         {
@@ -718,6 +721,9 @@
     {
       "addonName": "vpc-cni",
       "addonVersions": [
+        {
+          "addonVersion": "v1.20.3-eksbuild.1"
+        },
         {
           "addonVersion": "v1.20.2-eksbuild.1"
         },
