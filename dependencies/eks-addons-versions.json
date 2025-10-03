@@ -1,42 +1,16 @@
 {
   "addons": [
     {
-      "addonName": "adot",
-      "addonVersions": [
-        {
-          "addonVersion": "v0.131.0-eksbuild.1"
-        }
-      ]
-    },
-    {
       "addonName": "amazon-cloudwatch-observability",
       "addonVersions": [
+        {
+          "addonVersion": "v4.5.0-eksbuild.1"
+        },
         {
           "addonVersion": "v4.4.0-eksbuild.1"
         },
         {
           "addonVersion": "v4.3.1-eksbuild.1"
-        },
-        {
-          "addonVersion": "v4.3.0-eksbuild.1"
-        },
-        {
-          "addonVersion": "v4.2.1-eksbuild.1"
-        },
-        {
-          "addonVersion": "v4.2.0-eksbuild.1"
-        },
-        {
-          "addonVersion": "v4.1.0-eksbuild.1"
-        },
-        {
-          "addonVersion": "v4.0.1-eksbuild.1"
-        },
-        {
-          "addonVersion": "v4.0.0-eksbuild.1"
-        },
-        {
-          "addonVersion": "v3.7.0-eksbuild.1"
         }
       ]
     },
@@ -45,9 +19,6 @@
       "addonVersions": [
         {
           "addonVersion": "v1.48.0-eksbuild.2"
-        },
-        {
-          "addonVersion": "v1.48.0-eksbuild.1"
         },
         {
           "addonVersion": "v1.47.1-eksbuild.1"
@@ -133,109 +104,10 @@
       "addonName": "aws-efs-csi-driver",
       "addonVersions": [
         {
-          "addonVersion": "v2.1.9-eksbuild.1"
-        },
-        {
-          "addonVersion": "v2.1.8-eksbuild.1"
-        },
-        {
-          "addonVersion": "v2.1.7-eksbuild.1"
-        },
-        {
-          "addonVersion": "v2.1.6-eksbuild.1"
-        },
-        {
-          "addonVersion": "v2.1.4-eksbuild.1"
-        },
-        {
-          "addonVersion": "v2.1.3-eksbuild.1"
-        },
-        {
-          "addonVersion": "v2.1.2-eksbuild.1"
-        },
-        {
           "addonVersion": "v2.1.12-eksbuild.1"
         },
         {
           "addonVersion": "v2.1.11-eksbuild.1"
-        },
-        {
-          "addonVersion": "v2.1.10-eksbuild.1"
-        },
-        {
-          "addonVersion": "v2.1.1-eksbuild.1"
-        },
-        {
-          "addonVersion": "v2.1.0-eksbuild.1"
-        },
-        {
-          "addonVersion": "v2.0.9-eksbuild.1"
-        },
-        {
-          "addonVersion": "v2.0.8-eksbuild.1"
-        },
-        {
-          "addonVersion": "v2.0.7-eksbuild.1"
-        },
-        {
-          "addonVersion": "v2.0.6-eksbuild.2"
-        },
-        {
-          "addonVersion": "v2.0.6-eksbuild.1"
-        },
-        {
-          "addonVersion": "v2.0.5-eksbuild.1"
-        },
-        {
-          "addonVersion": "v2.0.4-eksbuild.1"
-        },
-        {
-          "addonVersion": "v2.0.3-eksbuild.1"
-        },
-        {
-          "addonVersion": "v2.0.2-eksbuild.1"
-        },
-        {
-          "addonVersion": "v2.0.1-eksbuild.1"
-        },
-        {
-          "addonVersion": "v2.0.0-eksbuild.1"
-        },
-        {
-          "addonVersion": "v1.7.7-eksbuild.1"
-        },
-        {
-          "addonVersion": "v1.7.6-eksbuild.2"
-        },
-        {
-          "addonVersion": "v1.7.6-eksbuild.1"
-        },
-        {
-          "addonVersion": "v1.7.5-eksbuild.2"
-        },
-        {
-          "addonVersion": "v1.7.5-eksbuild.1"
-        },
-        {
-          "addonVersion": "v1.7.4-eksbuild.1"
-        },
-        {
-          "addonVersion": "v1.7.3-eksbuild.1"
-        },
-        {
-          "addonVersion": "v1.7.2-eksbuild.1"
-        },
-        {
-          "addonVersion": "v1.7.1-eksbuild.1"
-        },
-        {
-          "addonVersion": "v1.7.0-eksbuild.1"
-        },
-        {
-          "addonVersion": "v1.5.9-eksbuild.1"
-        },
-        {
-          "addonVersion": "v1.5.8-eksbuild.1"
         }
       ]
     },
@@ -260,10 +132,10 @@
           "addonVersion": "v1.11.0-eksbuild.3"
         },
         {
-          "addonVersion": "v1.11.0-eksbuild.2"
+          "addonVersion": "v1.10.0-eksbuild.2"
         },
         {
-          "addonVersion": "v1.11.0-eksbuild.1"
+          "addonVersion": "v1.10.0-eksbuild.1"
         }
       ]
     },
@@ -287,9 +159,6 @@
         },
         {
           "addonVersion": "v1.11.0-eksbuild.1"
-        },
-        {
-          "addonVersion": "v1.10.0-eksbuild.1"
         }
       ]
     },
@@ -347,9 +216,6 @@
           "addonVersion": "v1.12.1-eksbuild.2"
         },
         {
-          "addonVersion": "v1.11.4-eksbuild.22"
-        },
-        {
           "addonVersion": "v1.11.4-eksbuild.20"
         },
         {
@@ -401,21 +267,6 @@
       "addonVersions": [
         {
           "addonVersion": "v1.4.0-eksbuild.2"
-        },
-        {
-          "addonVersion": "v1.3.0-eksbuild.2"
-        },
-        {
-          "addonVersion": "v1.2.0-eksbuild.1"
-        },
-        {
-          "addonVersion": "v1.1.0-eksbuild.1"
-        },
-        {
-          "addonVersion": "v1.0.2-eksbuild.2"
-        },
-        {
-          "addonVersion": "v1.0.1-eksbuild.2"
         }
       ]
     },
@@ -465,15 +316,6 @@
         },
         {
           "addonVersion": "v0.18.0-eksbuild.1"
-        },
-        {
-          "addonVersion": "v0.17.0-eksbuild.2"
-        },
-        {
-          "addonVersion": "v0.17.0-eksbuild.1"
-        },
-        {
-          "addonVersion": "v0.16.1-eksbuild.2"
         }
       ]
     },
@@ -509,6 +351,12 @@
     {
       "addonName": "kube-proxy",
       "addonVersions": [
+        {
+          "addonVersion": "v1.34.0-eksbuild.4"
+        },
+        {
+          "addonVersion": "v1.34.0-eksbuild.2"
+        },
         {
           "addonVersion": "v1.33.3-eksbuild.6"
         },
@@ -580,51 +428,6 @@
         },
         {
           "addonVersion": "v1.31.0-eksbuild.2"
-        },
-        {
-          "addonVersion": "v1.30.9-eksbuild.3"
-        },
-        {
-          "addonVersion": "v1.30.7-eksbuild.2"
-        },
-        {
-          "addonVersion": "v1.30.6-eksbuild.3"
-        },
-        {
-          "addonVersion": "v1.30.6-eksbuild.2"
-        },
-        {
-          "addonVersion": "v1.30.5-eksbuild.2"
-        },
-        {
-          "addonVersion": "v1.30.3-eksbuild.9"
-        },
-        {
-          "addonVersion": "v1.30.3-eksbuild.5"
-        },
-        {
-          "addonVersion": "v1.30.3-eksbuild.2"
-        },
-        {
-          "addonVersion": "v1.30.14-eksbuild.8"
-        },
-        {
-          "addonVersion": "v1.30.14-eksbuild.6"
-        },
-        {
-          "addonVersion": "v1.30.14-eksbuild.2"
-        },
-        {
-          "addonVersion": "v1.30.13-eksbuild.2"
-        },
-        {
-          "addonVersion": "v1.30.11-eksbuild.5"
-        },
-        {
-          "addonVersion": "v1.30.0-eksbuild.3"
-        },
-        {
-          "addonVersion": "v1.30.0-eksbuild.2"
         }
       ]
     },
@@ -745,9 +548,6 @@
           "addonVersion": "v1.20.1-eksbuild.1"
         },
         {
-          "addonVersion": "v1.20.0-eksbuild.1"
-        },
-        {
           "addonVersion": "v1.19.6-eksbuild.7"
         },
         {
@@ -803,9 +603,6 @@
         },
         {
           "addonVersion": "v1.18.0-eksbuild.1"
-        },
-        {
-          "addonVersion": "v1.17.1-eksbuild.1"
         }
       ]
     }
