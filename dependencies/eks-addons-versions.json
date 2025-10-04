@@ -18,6 +18,9 @@
       "addonName": "aws-ebs-csi-driver",
       "addonVersions": [
         {
+          "addonVersion": "v1.49.0-eksbuild.1"
+        },
+        {
           "addonVersion": "v1.48.0-eksbuild.2"
         },
         {
@@ -323,6 +326,9 @@
       "addonName": "fluent-bit",
       "addonVersions": [
         {
+          "addonVersion": "v4.1.0-eksbuild.1"
+        },
+        {
           "addonVersion": "v4.0.9-eksbuild.1"
         },
         {
@@ -342,6 +348,9 @@
         },
         {
           "addonVersion": "v4.0.3-eksbuild.1"
+        },
+        {
+          "addonVersion": "v4.0.11-eksbuild.1"
         },
         {
           "addonVersion": "v4.0.10-eksbuild.1"
