@@ -18,6 +18,9 @@
       "addonName": "aws-ebs-csi-driver",
       "addonVersions": [
         {
+          "addonVersion": "v1.51.0-eksbuild.1"
+        },
+        {
           "addonVersion": "v1.50.1-eksbuild.1"
         },
         {
@@ -113,6 +116,9 @@
       "addonName": "aws-efs-csi-driver",
       "addonVersions": [
         {
+          "addonVersion": "v2.1.13-eksbuild.1"
+        },
+        {
           "addonVersion": "v2.1.12-eksbuild.1"
         },
         {
@@ -174,6 +180,9 @@
     {
       "addonName": "cert-manager",
       "addonVersions": [
+        {
+          "addonVersion": "v1.19.0-eksbuild.1"
+        },
         {
           "addonVersion": "v1.18.2-eksbuild.2"
         },
@@ -338,6 +347,9 @@
       "addonName": "fluent-bit",
       "addonVersions": [
         {
+          "addonVersion": "v4.1.1-eksbuild.1"
+        },
+        {
           "addonVersion": "v4.1.0-eksbuild.1"
         },
         {
@@ -360,6 +372,9 @@
         },
         {
           "addonVersion": "v4.0.3-eksbuild.1"
+        },
+        {
+          "addonVersion": "v4.0.12-eksbuild.1"
         },
         {
           "addonVersion": "v4.0.11-eksbuild.1"
