@@ -298,6 +298,9 @@
       "addonName": "eks-pod-identity-agent",
       "addonVersions": [
         {
+          "addonVersion": "v1.3.9-eksbuild.3"
+        },
+        {
           "addonVersion": "v1.3.8-eksbuild.2"
         },
         {
@@ -571,6 +574,9 @@
     {
       "addonName": "vpc-cni",
       "addonVersions": [
+        {
+          "addonVersion": "v1.20.4-eksbuild.1"
+        },
         {
           "addonVersion": "v1.20.3-eksbuild.1"
         },
