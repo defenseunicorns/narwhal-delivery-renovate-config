@@ -290,6 +290,9 @@
       "addonName": "eks-node-monitoring-agent",
       "addonVersions": [
         {
+          "addonVersion": "v1.4.1-eksbuild.1"
+        },
+        {
           "addonVersion": "v1.4.0-eksbuild.2"
         }
       ]
@@ -375,6 +378,9 @@
         },
         {
           "addonVersion": "v4.0.3-eksbuild.1"
+        },
+        {
+          "addonVersion": "v4.0.13-eksbuild.1"
         },
         {
           "addonVersion": "v4.0.12-eksbuild.1"
