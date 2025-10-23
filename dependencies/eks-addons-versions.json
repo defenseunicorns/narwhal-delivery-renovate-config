@@ -18,7 +18,13 @@
       "addonName": "aws-ebs-csi-driver",
       "addonVersions": [
         {
+          "addonVersion": "v1.51.1-eksbuild.1"
+        },
+        {
           "addonVersion": "v1.51.0-eksbuild.1"
+        },
+        {
+          "addonVersion": "v1.50.2-eksbuild.1"
         },
         {
           "addonVersion": "v1.50.1-eksbuild.1"
@@ -158,6 +164,9 @@
       "addonName": "aws-mountpoint-s3-csi-driver",
       "addonVersions": [
         {
+          "addonVersion": "v2.1.0-eksbuild.1"
+        },
+        {
           "addonVersion": "v2.0.0-eksbuild.1"
         },
         {
@@ -181,7 +190,13 @@
       "addonName": "cert-manager",
       "addonVersions": [
         {
+          "addonVersion": "v1.19.1-eksbuild.1"
+        },
+        {
           "addonVersion": "v1.19.0-eksbuild.1"
+        },
+        {
+          "addonVersion": "v1.18.3-eksbuild.1"
         },
         {
           "addonVersion": "v1.18.2-eksbuild.2"
