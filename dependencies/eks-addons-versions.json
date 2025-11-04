@@ -308,6 +308,9 @@
       "addonName": "eks-node-monitoring-agent",
       "addonVersions": [
         {
+          "addonVersion": "v1.4.2-eksbuild.1"
+        },
+        {
           "addonVersion": "v1.4.1-eksbuild.1"
         },
         {
@@ -318,6 +321,9 @@
     {
       "addonName": "eks-pod-identity-agent",
       "addonVersions": [
+        {
+          "addonVersion": "v1.3.9-eksbuild.5"
+        },
         {
           "addonVersion": "v1.3.9-eksbuild.3"
         },
