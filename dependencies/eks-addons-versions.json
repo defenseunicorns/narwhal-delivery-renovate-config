@@ -504,6 +504,9 @@
       "addonName": "kube-state-metrics",
       "addonVersions": [
         {
+          "addonVersion": "v2.17.0-eksbuild.3"
+        },
+        {
           "addonVersion": "v2.17.0-eksbuild.2"
         },
         {
