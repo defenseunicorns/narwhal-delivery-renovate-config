@@ -360,6 +360,9 @@
       "addonName": "external-dns",
       "addonVersions": [
         {
+          "addonVersion": "v0.19.0-eksbuild.3"
+        },
+        {
           "addonVersion": "v0.19.0-eksbuild.2"
         },
         {
@@ -533,6 +536,9 @@
       "addonName": "metrics-server",
       "addonVersions": [
         {
+          "addonVersion": "v0.8.0-eksbuild.3"
+        },
+        {
           "addonVersion": "v0.8.0-eksbuild.2"
         },
         {
@@ -572,6 +578,18 @@
         },
         {
           "addonVersion": "v1.9.0-eksbuild.3"
+        },
+        {
+          "addonVersion": "v1.10.2-eksbuild.2"
+        },
+        {
+          "addonVersion": "v1.10.2-eksbuild.1"
+        },
+        {
+          "addonVersion": "v1.10.1-eksbuild.1"
+        },
+        {
+          "addonVersion": "v1.10.0-eksbuild.1"
         }
       ]
     },
@@ -607,6 +625,9 @@
     {
       "addonName": "vpc-cni",
       "addonVersions": [
+        {
+          "addonVersion": "v1.20.4-eksbuild.2"
+        },
         {
           "addonVersion": "v1.20.4-eksbuild.1"
         },
