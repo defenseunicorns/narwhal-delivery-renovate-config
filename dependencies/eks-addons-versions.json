@@ -638,12 +638,6 @@
       "addonName": "vpc-cni",
       "addonVersions": [
         {
-          "addonVersion": "v1.20.4-eksbuild.3"
-        },
-        {
-          "addonVersion": "v1.20.4-eksbuild.2"
-        },
-        {
           "addonVersion": "v1.20.4-eksbuild.1"
         },
         {
